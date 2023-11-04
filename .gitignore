@@ -11,9 +11,6 @@ requirements.txt
 app/.vscode/
 app/.idea/
 
-app/__pycache__/
-app/*.pyc
-
 app/*.log
 
 app/routers/__pycache__/

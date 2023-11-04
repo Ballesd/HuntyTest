@@ -1,0 +1,170 @@
+
+"openapi": "3.0.1"
+"info":
+  "title": "Calculadora API Hunty test"
+  "version": "1.0.0"
+  "description": "API para realizar operaciones matemáticas básicas."
+"servers":
+  -
+    "url": "http://localhost:8080/operations"
+"tags":
+  -
+    "name": "operations"
+    "description": "Este endpoint maneja toda información relacionada con las operaciones matemáticas básicas"
+"paths":
+  "/add":
+    "get":
+      "summary": "Realizar una suma"
+      "description": "Realiza una operación de suma entre dos números."
+      "parameters":
+        -
+          "name": "a"
+          "in": "query"
+          "description": "Primer número"
+          "required": true
+          "schema":
+            "type": "number"
+        -
+          "name": "b"
+          "in": "query"
+          "description": "Segundo número"
+          "required": true
+          "schema":
+            "type": "number"
+      "responses":
+        "200":
+          "description": "Resultado de la suma"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "resultado":
+                    "type": "number"
+        "400":
+          "description": "Valores no válidos"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "detail":
+                    "type": "string"
+      "x-asyncapi": true
+  "/substract":
+    "get":
+      "summary": "Realizar una resta"
+      "description": "Realiza una operación de resta entre dos números."
+      "parameters":
+        -
+          "name": "a"
+          "in": "query"
+          "description": "Minuendo"
+          "required": true
+          "schema":
+            "type": "number"
+        -
+          "name": "b"
+          "in": "query"
+          "description": "Sustraendo"
+          "required": true
+          "schema":
+            "type": "number"
+      "responses":
+        "200":
+          "description": "Resultado de la resta"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "resultado":
+                    "type": "number"
+        "400":
+          "description": "Valores no válidos"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "detail":
+                    "type": "string"
+      "x-asyncapi": true
+  "/multiply":
+    "get":
+      "summary": "Realizar una multiplicación"
+      "description": "Realiza una operación de multiplicación entre dos números."
+      "parameters":
+        -
+          "name": "a"
+          "in": "query"
+          "description": "Primer factor"
+          "required": true
+          "schema":
+            "type": "number"
+        -
+          "name": "b"
+          "in": "query"
+          "description": "Segundo factor"
+          "required": true
+          "schema":
+            "type": "number"
+      "responses":
+        "200":
+          "description": "Resultado de la multiplicación"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "resultado":
+                    "type": "number"
+        "400":
+          "description": "Valores no válidos"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "detail":
+                    "type": "string"
+      "x-asyncapi": true
+  "/divide":
+    "get":
+      "summary": "Realizar una división"
+      "description": "Realiza una operación de división entre dos números."
+      "parameters":
+        -
+          "name": "a"
+          "in": "query"
+          "description": "Dividendo"
+          "required": true
+          "schema":
+            "type": "number"
+        -
+          "name": "b"
+          "in": "query"
+          "description": "Divisor"
+          "required": true
+          "schema":
+            "type": "number"
+      "responses":
+        "200":
+          "description": "Resultado de la división"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "resultado":
+                    "type": "number"
+        "400":
+          "description": "Valores no válidos"
+          "content":
+            "application/json":
+              "schema":
+                "type": "object"
+                "properties":
+                  "detail":
+                    "type": "string"
+      "x-asyncapi": true

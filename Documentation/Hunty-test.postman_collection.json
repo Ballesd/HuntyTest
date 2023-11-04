@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "8b3a34c3-8a7b-4088-9f15-2fd43e557fd2",
+		"name": "Hunty-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21911005"
+	},
+	"item": [
+		{
+			"name": "[ADD] - ruta de la suma",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/add/?a=123.4234&b=412.55",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"add",
+						""
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "123.4234"
+						},
+						{
+							"key": "b",
+							"value": "412.55"
+						}
+					]
+				},
+				"description": "Ruta y descripción de los parámetros usados para la suma de la API"
+			},
+			"response": []
+		},
+		{
+			"name": "[SUBSTRACT] - resta de los valores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/substract?a=100.232&b=20.323",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"substract"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "100.232"
+						},
+						{
+							"key": "b",
+							"value": "20.323"
+						}
+					]
+				},
+				"description": "Ruta y documentación de los parámetros usados para la resta"
+			},
+			"response": []
+		},
+		{
+			"name": "[MULTIPLY] - ruta de la multiplicación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/multiply?a=-3.534&b=-21",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "-3.534"
+						},
+						{
+							"key": "b",
+							"value": "-21"
+						},
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Ruta y parámetros de multiplicación de los valores"
+			},
+			"response": []
+		},
+		{
+			"name": "[DIVIDE]- ruta de la división",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/divide?a=2132&b=33.423",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"divide"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "2132"
+						},
+						{
+							"key": "b",
+							"value": "33.423"
+						}
+					]
+				},
+				"description": "ruta y parámetros que se utilizan para la división"
+			},
+			"response": []
+		}
+	]
+}
